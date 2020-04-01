@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment_login">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -14,30 +13,30 @@
         >
 
         <LinearLayout
-        android:layout_marginTop="32dp"
-        android:orientation="vertical"
-        android:paddingHorizontal="24dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif-medium"
-            android:textStyle="normal"
-            android:textColor="#5c5c5c"
-            tools:text="Email"
-            android:layout_marginBottom="8dp"
-            />
-        <EditText
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/bg_input_text"
-            android:hint="Please input your email"
-            android:textColorHint="#bdbcbc"
-            android:textSize="12sp"
-            android:paddingStart="16dp"
-            />
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#5c5c5c"
+                tools:text="Full Name"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_input_text"
+                android:hint="Please input your Full Name"
+                android:textColorHint="#bdbcbc"
+                android:textSize="12sp"
+                android:paddingStart="16dp"
+                />
         </LinearLayout>
 
 
@@ -54,14 +53,13 @@
                 android:fontFamily="sans-serif-medium"
                 android:textStyle="normal"
                 android:textColor="#5c5c5c"
-                tools:text="Password"
-                android:layout_marginBottom="8dp"
+                tools:text="Email"
                 />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/bg_input_text"
-                android:hint="Please input your password"
+                android:hint="Please input your email"
                 android:textColorHint="#bdbcbc"
                 android:textSize="12sp"
                 android:paddingLeft="16dp"
@@ -73,7 +71,7 @@
             android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:background="@drawable/bg_btn_primary"
-            android:text="Login"
+            android:text="Sign Up"
             android:textColor="#ffffff"
             android:textSize="12sp"
             android:layout_height="40dp"/>
@@ -116,19 +114,6 @@
                 app:layout_constraintStart_toEndOf="@+id/view"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:textColor="#33a29a"
-                android:textSize="12sp"
-                android:textStyle="normal"
-                android:layout_marginTop="32dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/view"
-                tools:text="Forgot your password?" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
